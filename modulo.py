@@ -31,14 +31,3 @@ if len(sys.argv) > 0:
     print("You answered {} the correct answer is {}".format(moduloguess, moduloanswer))
     print("You answered {}, the correct answer is {}".format(moduleguess2,moduloanswer2))
     print("Keep up the good work learning!!")
-
-
-""""
-if len(sys.argv) > 0:
-    print(sys.argv[1])
-    
-    set firstnumber from system argument 1
-    set secondnumber from system argument 2
-    set moduloguess from system argument 3
-    set moduleguess2 from system argument 4 
-    """
