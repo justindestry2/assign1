@@ -5,13 +5,12 @@ print("Welcome to the Money Translator!")
 
 import sys 
 
-
-#ask for average persons net worth (possibly argv it in)
+#ask for average persons net worth 
 usernetworth = float(input("What is your yearly income? "))
 #usernetworth = float(sys.argv[1])
 
 #name of person making the donation
-donatorname = input("Who is making the AMAZING donation?")
+donatorname = input("Who is making such an AMAZING donation?")
 donatorname = donatorname.capitalize()
 
 #how much of a donation they are making

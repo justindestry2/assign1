@@ -5,7 +5,7 @@ print("Welcome to the Modulo-o-matic")
 
 import sys 
 
-#all 4 int-variables copy-pasted 
+#all 4 int-variables copy-pasted with their own test[argv[]] version run through terminal  
 
 #firstnumber = int(sys.argv[1])  
 firstnumber = (input("What is the first number?"))
@@ -16,14 +16,15 @@ secondnumber = (input("What is the second number?"))
 #print(type(secondnumber))
 firstnumber = str(firstnumber)
 secondnumber = str(secondnumber)
-print(type(firstnumber))
-print(type(secondnumber))
+#print(type(firstnumber))
+#print(type(secondnumber))
 #moduloguess = int(sys.argv[3])
-#couldnt format these
+
+#couldnt format these strings, kept giving errors
 #moduloguess = int(input("What do you think {} modulo {} is?".format(firstnumber,secondnumber))
 moduloguess = (input("What do you think " + firstnumber + " modulo " + secondnumber + " is?"))
-#moduloanswer = firstnumber % secondnumber
-#couldnt format these
+
+#couldnt format these strings, kept giving errors
 moduloguess2 = (input("What do you think " + secondnumber + " modulo " + firstnumber + " is?"))
 #moduleguess2 = int(input("WHat do you think {} modulo {} is?".format(secondnumber,firstnumber))
 #moduleguess2 = int(sys.argv[4])
@@ -37,13 +38,6 @@ moduloanswer = firstnumber % secondnumber
 moduloanswer2 = secondnumber % firstnumber
 
 
-#was thinking of how to put two arguments into a print statement 
-#thought about using two different variables
-"""
-txt = "You answered {},"
-txt2 = " the correct answer is {}"
-"""
-
 #with system arguments -testing in terminal
 #if len(sys.argv) > 0:
     #print("You answered {} the correct answer is {}".format(moduloguess, moduloanswer))
@@ -55,3 +49,4 @@ txt2 = " the correct answer is {}"
 print("You answered {}, the correct answer is {}".format(moduloguess, moduloanswer))
 print("You answered {}, the correct answer is {}".format(moduloguess2,moduloanswer2))
 print("Keep up the good work learning!!")
+
