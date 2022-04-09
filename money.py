@@ -10,7 +10,9 @@ import sys
 
 usernetworth = float(input("What is your yearly income? "))
 #usernetworth = float(sys.argv[1])
-
+#adjust user net worth with federal poverty level 2022 -13,590$
+costofliving = 13590
+usernetworth = float(usernetworth-costofliving)
 #name of person making the donation
 #capitalize for further use in code
 donatorname = input("Who is making such an AMAZING donation?")
@@ -41,14 +43,20 @@ donationdivide = donationamt / actualnetworth
 #multiplied by the users net worth
 userdonation = usernetworth * donationdivide
 userdonation = "{0:,.4f}".format(userdonation)
+usernetworth = usernetworth+costofliving
 #reformated usernetworth cause it was only showing 1 penny
 usernetworth = "{0:,.2f}".format(usernetworth)
 donationamt= "{0:,.2f}".format(donationamt)
+
+#added back costofliving into actualnetworth for final string
+#usernetworth = usernetworth+costofliving
 #changed one last time for formating in final string
-actualnetworth = "{0:,.2f}".format(actualnetworth)
+actualnetworth= "{0:,.2f}".format(actualnetworth)
+costofliving = "{0:,.2f}".format(costofliving)
+
 
 #print comparison
-print("then one ${} donation for someone with their net worth of ${} is the same as a ${} donation for someone with a net worth of ${}. Generous?".format(donationamt, actualnetworth, userdonation, usernetworth))
+print("then one ${} donation for someone with their net worth of ${} is the same as a ${} donation for someone with a net worth of ${} minus the cost of living(${}). Generous?".format(donationamt, actualnetworth, userdonation, usernetworth,costofliving))
 
 
 
