@@ -46,6 +46,7 @@ moduloanswer2 = secondnumber % firstnumber
 
 
 #same print statements as above
+#comment out if you are using argv[] to test
 print("You answered {}, the correct answer is {}".format(moduloguess, moduloanswer))
 print("You answered {}, the correct answer is {}".format(moduloguess2,moduloanswer2))
 print("Keep up the good work learning!!")

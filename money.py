@@ -3,13 +3,16 @@
 #descirption: code for assignment 1, csci 141
 print("Welcome to the Money Translator!")
 
-import sys 
+#from os import sep
 
-#ask for average persons net worth 
+import sys 
+#sys.argv for testings for 3 input values  
+
 usernetworth = float(input("What is your yearly income? "))
 #usernetworth = float(sys.argv[1])
 
 #name of person making the donation
+#capitalize for further use in code
 donatorname = input("Who is making such an AMAZING donation?")
 donatorname = donatorname.capitalize()
 
@@ -26,17 +29,16 @@ actualnetworth = donatornetworth * 1000000
 actualnetworth = "{0:,.2f}".format(actualnetworth)
 
 #print donators worth in actual amount
-print("If ", donatorname, "'s networth is $", actualnetworth)
+print("If ", donatorname, "'s networth is $", actualnetworth,end=",")
 
 #reformating actualnetworth back to int after reformating to str
 actualnetworth = actualnetworth.replace(",","")
 actualnetworth = float(actualnetworth)
 
-#divide donation by networth
+#percentage of donation to net worth would be donation amount divided by acutal net worth
 donationdivide = donationamt / actualnetworth
-#donationdivide = (donationdivide)
-#print(donationdivide)
-#print comparison
+#user donation comparison would be donationdivde(the percentage of networth actually donated)
+#multiplied by the users net worth
 userdonation = usernetworth * donationdivide
 userdonation = "{0:,.4f}".format(userdonation)
 #reformated usernetworth cause it was only showing 1 penny
@@ -45,7 +47,8 @@ donationamt= "{0:,.2f}".format(donationamt)
 #changed one last time for formating in final string
 actualnetworth = "{0:,.2f}".format(actualnetworth)
 
-print("Then one ${} donation for someone with their net worth of ${}, is the same as a ${} donation for someone with a net worth of ${} Generous?".format(donationamt, actualnetworth, userdonation, usernetworth))
+#print comparison
+print("then one ${} donation for someone with their net worth of ${} is the same as a ${} donation for someone with a net worth of ${}. Generous?".format(donationamt, actualnetworth, userdonation, usernetworth))
 
 
 
