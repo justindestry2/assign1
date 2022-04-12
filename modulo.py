@@ -39,15 +39,18 @@ moduloanswer2 = secondnumber % firstnumber
 
 
 #with system arguments -testing in terminal
-#if len(sys.argv) > 0:
-    #print("You answered {} the correct answer is {}".format(moduloguess, moduloanswer))
-    #print("You answered {}, the correct answer is {}".format(moduleguess2,moduloanswer2))
-    #print("Keep up the good work learning!!")
+if len(sys.argv) > 1:
+    print("You answered {} the correct answer is {}".format(moduloguess, moduloanswer))
+    print("You answered {}, the correct answer is {}".format(moduloguess2,moduloanswer2))
+
+print("Keep up the good work learning!!")
 
 
 #same print statements as above
 #comment out if you are using argv[] to test
-print("You answered {}, the correct answer is {}".format(moduloguess, moduloanswer))
-print("You answered {}, the correct answer is {}".format(moduloguess2,moduloanswer2))
-print("Keep up the good work learning!!")
+#else len(sys.argv) = 0:
+    #print("You answered {}, the correct answer is {}".format(moduloguess, moduloanswer))
+    #print("You answered {}, the correct answer is {}".format(moduloguess2,moduloanswer2))
+
+#print("Keep up the good work learning!!")
 
